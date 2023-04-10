@@ -1,0 +1,186 @@
+ .phead {
+    margin-bottom: 40px;
+    &__title {
+   
+        &.fs--sm {
+            
+        }
+    }
+    &__intro {
+       
+        .text--center & {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    @media (max-width: $md-desktop-lg) {
+        &__title {
+           
+            &.fs--sm {
+                
+            }
+        }
+        &__intro {
+         
+        }
+    }
+
+    @media (max-width: $md-tablet) {
+        &__title {
+           
+            &.fs--sm {
+             
+            }
+        }
+
+    }
+    @media (max-width: $md-tablet-sm) {
+ x
+        &__title {
+         
+            &.fs--sm {
+              
+            }
+        }
+    }
+}
+
+.section {
+    &__head {
+        margin-bottom: 68px;
+        &.hcols {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+    }
+    &__title {
+       
+        &.fs--sm {
+            
+        }
+    }
+    &__intro {
+        
+        .text--center & {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__buttons {
+        margin-top: 68px;
+        text-align: center;
+    }
+    &__first {
+        margin-top: 0 !important;
+    }
+    &__mg {
+        margin: 160px 0;
+        &--md {
+          
+        }
+        &--sm {
+           
+        }
+    }
+    &__mgt {
+        &--sm {
+          
+        }
+    }
+    &__pd {
+        padding: 130px 0;
+    }
+    &__pdt {
+        padding-top: 70px;
+    }
+    &__tab {
+        display:none;
+        &.show {
+            display:block;
+        }
+    }
+    
+    @media (max-width: $md-desktop-lg) {
+        &__inner {
+           
+        }
+        &__head {
+         
+        }
+        &__title {
+          
+        }
+
+        &__mg {
+           
+            &--md {
+            
+            }
+            &--sm {
+             
+            }
+        }
+        &__mgt {
+            &--sm {
+               
+            }
+        }
+        &__buttons {
+           
+        }
+    }
+    @media (max-width: $md-desktop) {
+       
+        
+    }
+
+    @media (max-width: $md-tablet) {
+       
+        &__head {
+            
+            &.hcols {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        &__title {
+         
+            
+        }
+        &__buttons {
+           
+        }
+    }
+    @media (max-width: $md-tablet-sm) {
+     
+        &__head {
+           
+        }
+        &__title {
+          
+            
+        }
+        &__buttons {
+            
+        }
+    }
+    @media (max-width: $md-mobile) {
+          
+    }
+}
+
+.title {
+    
+}
+.text {
+   
+}
+
+.text--center {
+    text-align: center;
+}
+.text--white {
+    color: #ffff;
+}

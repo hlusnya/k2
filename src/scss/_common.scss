@@ -1,0 +1,122 @@
+
+.clear { 
+    clear: both; 
+    height: 0; 
+    overflow: hidden; 
+    font-size: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 100%;
+    max-width: $width-container; 
+    margin-left: auto; margin-right: auto;
+    position: relative;
+    @media screen and (max-width: $md-desktop-lg) {
+        max-width: 1440px;
+    }	
+    @media screen and (max-width: $md-desktop-md) {
+        max-width: 1200px;
+    }	
+    @media screen and (max-width: $md-desktop) {
+         max-width: 960px;
+    }	
+    @media screen and (max-width: $md-tablet) {
+        max-width: 710px;
+    }	
+    @media screen and (max-width: $md-tablet-sm) {
+        max-width: 100%;
+        padding: 0 $pd-container;
+    }	
+    @media screen and (max-width: $md-mobile-lg) {
+        
+    }
+}
+
+
+
+.wrapper {
+    min-height: 100%; width: 100%;  
+    position: relative; 
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__wrapper {
+    flex: 1 0 auto;
+}
+
+.pd__header {
+    padding-top: $header-h;
+}
+
+
+
+.hide-desktop-lg {
+    @media (max-width: $md-desktop-lg) {
+        display: none !important;
+    }
+}
+.hide-desktop-md {
+    @media (max-width: $md-desktop-md) {
+        display: none !important;
+    }
+}
+.hide-desktop {
+    @media (max-width: $md-desktop) {
+        display: none !important;
+    }
+}
+.hide-tablet {
+    @media (max-width: $md-tablet) {
+        display: none !important;
+    }
+}
+.hide-tablet-sm {
+    @media (max-width: $md-tablet-sm) {
+        display: none !important;
+    }
+}
+.hide-mobile-lg {
+    @media (max-width: $md-mobile-lg) {
+        display: none !important;
+    }
+}
+.show-desktop {
+    @media (min-width: $md-desktop+ 0.02px) {
+        display: none !important;
+    }
+}
+.show-tablet {
+    @media (min-width: $md-tablet+ 0.02px) {
+        display: none !important;
+    }
+}
+.show-tablet-sm {
+    @media (min-width: $md-tablet-sm+ 0.02px) {
+        display: none !important;
+    }
+}
+.show-mobile-lg {
+    @media (min-width: $md-mobile-lg+ 0.02px) {
+        display: none !important;
+    }
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+
+@import "common/content";
+@import "common/section";
+@import "common/elements";

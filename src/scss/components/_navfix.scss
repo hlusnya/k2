@@ -1,0 +1,45 @@
+.navfix {
+    display: none;
+    position: fixed;
+    top: $header-h; left: 0;
+    width: 100%; height: calc(var(--vh) * 100);
+    background: #fff;
+    z-index: 999;
+    padding: 40px 0 0;
+    margin: 0;
+    overflow: auto;
+    
+    
+    &__title {
+        font-size: 36px;
+        line-height: lh(40, 36);
+        font-family: $font-cormorant;
+        color: black;
+        margin-bottom: 40px;
+    }
+    
+    &__contacts {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #737373;
+        &-row {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &-row + &-row {
+            margin-top: 16px;
+        }
+    }
+    &__phone {
+        font-size: 20px;
+        color: #171717;
+        font-weight: 600;
+        line-height: 1.4;   
+    }
+    
+    @media (max-width: $md-tablet) {
+        top: $header-h-m;
+        height: calc(var(--vh) * 100 - $header-h-m);
+    }
+}

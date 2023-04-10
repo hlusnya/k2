@@ -1,0 +1,39 @@
+@use "sass:math";
+
+@mixin input-placeholder($class, $color, $opacity:0.6) {
+    #{$class}::-webkit-input-placeholder {color: $color;opacity: $opacity;}
+    #{$class}::-o-input-placeholder{color: $color;opacity: $opacity;}
+    #{$class}::-moz-input-placeholder{ color: $color;opacity: $opacity;}
+    #{$class}:-moz-input-placeholder{  color: $color;opacity: $opacity;}
+    #{$class}::-ms-input-placeholder{  color: $color;opacity: $opacity;}
+    #{$class} input-placeholder {  color: $color;opacity: $opacity;}
+    #{$class}::placeholder {color: $color;opacity: $opacity;}
+    #{$class}:placeholder-shown {color: $color;opacity: $opacity;}
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin transition($property) {
+    -webkit-transition:  $property ease-in-out;
+    -moz-transition:  $property ease-in-out;
+    -o-transition:  $property ease-in-out;
+    -ms-transition:  $property ease-in-out;
+    transition:  $property ease-in-out;  
+}
+
+@mixin photo-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@function lh($lh, $fs) {
+    @return #{math.div($lh, $fs)};
+}
